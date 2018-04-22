@@ -27,10 +27,10 @@ export class CourseComponent implements OnInit {
     console.log(`div was clicked`);
   }
 
-  onKeyUp(evt) {
-    console.log(evt.keyCode);
+  onKeyUp(email: string) {
+    console.log(email);
     // if (evt.keyCode === 13) {
-      console.log(`enter was presses`);
+      // console.log(`enter was presses`);
     //  }
   }
 }

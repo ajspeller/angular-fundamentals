@@ -16,4 +16,4 @@
   <button class="btn btn-default" (click)="onSave($event)">Save</button>
 </div>
 
-<input (keyup.enter)="onKeyUp($event)" />
+<input #email (keyup.enter)="onKeyUp(email.value)" />
