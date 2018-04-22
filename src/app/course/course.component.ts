@@ -11,7 +11,7 @@ export class CourseComponent implements OnInit {
   imageUrl = 'http://lorempixel.com/400/200';
   colspan = 2;
   isActive = true;
-
+  email = 'ajspeller@gmail.com';
   constructor() { }
 
   ngOnInit() {
@@ -27,10 +27,7 @@ export class CourseComponent implements OnInit {
     console.log(`div was clicked`);
   }
 
-  onKeyUp(email: string) {
-    console.log(email);
-    // if (evt.keyCode === 13) {
-      // console.log(`enter was presses`);
-    //  }
+  onKeyUp() {
+    console.log(this.email);
   }
 }
