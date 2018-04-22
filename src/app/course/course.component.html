@@ -1,8 +1,3 @@
-<span (click)="isActive=!isActive" *ngIf="isActive" class="glyphicon glyphicon-star"></span>
-<span (click)="isActive=!isActive" *ngIf="!isActive" class="glyphicon glyphicon-star-empty"></span>
-{{ isActive }}
-
-<span (click)="isActive=!isActive" class="glyphicon" [class.glyphicon-star]="isActive" [class.glyphicon-star-empty]="!isActive"></span>
 
 <h2>{{ title }}</h2>
 <h2 [textContent]="title"></h2>

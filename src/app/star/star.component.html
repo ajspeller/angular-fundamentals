@@ -1,3 +1,5 @@
-<p>
-  star works!
-</p>
+<span (click)="isActive=!isActive" *ngIf="isActive" class="glyphicon glyphicon-star"></span>
+<span (click)="isActive=!isActive" *ngIf="!isActive" class="glyphicon glyphicon-star-empty"></span>
+{{ isActive }}
+
+<span (click)="isActive=!isActive" class="glyphicon" [class.glyphicon-star]="isActive" [class.glyphicon-star-empty]="!isActive"></span>
