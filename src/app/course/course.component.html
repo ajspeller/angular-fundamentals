@@ -1,3 +1,17 @@
-<p>
-  course works!
-</p>
+<h2>{{ title }}</h2>
+<h2 [textContent]="title"></h2>
+<img src="{{ imageUrl }}" />
+<img [src]="imageUrl" />
+<table>
+  <tr>
+    <td [attr.colspan]="colspan">
+
+    </td>
+  </tr>
+</table>
+
+<button [style.backgroundColor]="isActive ? 'blue': 'white'" class="btn btn-primary" [class.active]="isActive">Save</button>
+
+<div (click)="onDivClicked()"> 
+  <button class="btn btn-default" (click)="onSave($event)">Save</button>
+</div>

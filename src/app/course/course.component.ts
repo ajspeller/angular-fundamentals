@@ -7,9 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CourseComponent implements OnInit {
 
+  title = 'List of courses';
+  imageUrl = 'http://lorempixel.com/400/200';
+  colspan = 2;
+  isActive = true;
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  onSave(evt) {
+    console.log(`button was clicked`);
+    console.log(evt);
+    evt.stopPropagation();
+  }
+
+  onDivClicked() {
+    console.log(`div was clicked`);
+  }
 }
