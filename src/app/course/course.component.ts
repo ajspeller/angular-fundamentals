@@ -19,6 +19,7 @@ export class CourseComponent implements OnInit {
     price: 199.95,
     releaseDate: new Date(2016, 3, 1)
   };
+  text = 'lorem Ipsum is simply dummy test of the printing and typesetting ';
 
   constructor() { }
 
