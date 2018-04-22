@@ -1,5 +1,12 @@
 <h2>{{ title }}</h2>
 <h2 [textContent]="title"></h2>
+{{ course.title | uppercase | lowercase }} <br>
+{{ course.students | number }} <br>
+{{ course.rating | number:'1.2-3' }} <br>
+{{ course.price | currency }} <br>
+{{ course.releaseDate | date }} <br>
+
+
 <img src="{{ imageUrl }}" />
 <img [src]="imageUrl" />
 <table>
@@ -17,4 +24,4 @@
 </div>
 
 <input [value]="email" (keyup.enter)="email = $event.target.value; onKeyUp()" />
-<input [(ngModel)]="email" (keyup.enter)="onKeyUp()" /> 
+<input [(ngModel)]="email" (keyup.enter)="onKeyUp()" />

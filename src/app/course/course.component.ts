@@ -12,6 +12,14 @@ export class CourseComponent implements OnInit {
   colspan = 2;
   isActive = true;
   email = 'ajspeller@gmail.com';
+  course = {
+    title: 'Learning Angular',
+    rating: 4.9768,
+    students: 8888,
+    price: 199.95,
+    releaseDate: new Date(2016, 3, 1)
+  };
+
   constructor() { }
 
   ngOnInit() {
