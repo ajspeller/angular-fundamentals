@@ -1,3 +1,9 @@
+<span (click)="isActive=!isActive" *ngIf="isActive" class="glyphicon glyphicon-star"></span>
+<span (click)="isActive=!isActive" *ngIf="!isActive" class="glyphicon glyphicon-star-empty"></span>
+{{ isActive }}
+
+<span (click)="isActive=!isActive" class="glyphicon" [class.glyphicon-star]="isActive" [class.glyphicon-star-empty]="!isActive"></span>
+
 <h2>{{ title }}</h2>
 <h2 [textContent]="title"></h2>
 {{ course.title | uppercase | lowercase }} <br>
@@ -26,3 +32,5 @@
 
 <input [value]="email" (keyup.enter)="email = $event.target.value; onKeyUp()" />
 <input [(ngModel)]="email" (keyup.enter)="onKeyUp()" />
+
+
