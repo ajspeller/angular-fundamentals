@@ -26,4 +26,11 @@ export class CourseComponent implements OnInit {
   onDivClicked() {
     console.log(`div was clicked`);
   }
+
+  onKeyUp(evt) {
+    console.log(evt.keyCode);
+    // if (evt.keyCode === 13) {
+      console.log(`enter was presses`);
+    //  }
+  }
 }

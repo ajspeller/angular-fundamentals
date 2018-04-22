@@ -12,6 +12,8 @@
 
 <button [style.backgroundColor]="isActive ? 'blue': 'white'" class="btn btn-primary" [class.active]="isActive">Save</button>
 
-<div (click)="onDivClicked()"> 
+<div (click)="onDivClicked()">
   <button class="btn btn-default" (click)="onSave($event)">Save</button>
 </div>
+
+<input (keyup.enter)="onKeyUp($event)" />
