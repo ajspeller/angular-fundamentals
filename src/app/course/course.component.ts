@@ -20,6 +20,7 @@ export class CourseComponent implements OnInit {
     releaseDate: new Date(2016, 3, 1)
   };
   text = 'lorem Ipsum is simply dummy test of the printing and typesetting ';
+  movieTitle = 'This is just a test';
 
   constructor() { }
 
