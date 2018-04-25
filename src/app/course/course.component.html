@@ -1,16 +1,15 @@
-
-<input #movie [(ngModel)]="movieTitle" />
- {{ movie.value | titleCase }}
+<input [(ngModel)]="movieTitle" />
+{{ movieTitle | titleCase }}
 
 <h2>{{ title }}</h2>
 <h2 [textContent]="title"></h2>
-{{ course.title | uppercase | lowercase }} <br>
-{{ course.students | number }} <br>
-{{ course.rating | number:'1.2-3' }} <br>
-{{ course.price | currency }} <br>
-{{ course.releaseDate | date }} <br>
-
-{{ text | summary:25 }} <br>
+{{ course.title | uppercase | lowercase }}
+<br> {{ course.students | number }}
+<br> {{ course.rating | number:'1.2-3' }}
+<br> {{ course.price | currency }}
+<br> {{ course.releaseDate | date }}
+<br> {{ text | summary:25 }}
+<br>
 
 
 <img src="{{ imageUrl }}" />
@@ -31,5 +30,3 @@
 
 <input [value]="email" (keyup.enter)="email = $event.target.value; onKeyUp()" />
 <input [(ngModel)]="email" (keyup.enter)="onKeyUp()" />
-
-
