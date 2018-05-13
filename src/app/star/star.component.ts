@@ -13,4 +13,7 @@ export class StarComponent implements OnInit {
   ngOnInit() {
   }
 
+  onClick() {
+    console.log(`this has been clicked`);
+  }
 }
