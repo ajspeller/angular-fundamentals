@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-star',
@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StarComponent implements OnInit {
   isAcive: boolean;
+
+  @Output() change = new EventEmitter();
 
   constructor() { }
 

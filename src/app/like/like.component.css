@@ -1,0 +1,11 @@
+.highlighted {
+  color: deeppink;
+  cursor: pointer;
+}
+
+span {
+  font-size: 3em;
+  color: #ccc;
+}
+
+

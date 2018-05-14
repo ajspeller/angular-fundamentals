@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  tweet = {
+    body: `Here is the body of the tweet`,
+    likesCount: 0,
+    isLiked: false
+  };
 }
